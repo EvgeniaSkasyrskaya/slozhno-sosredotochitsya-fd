@@ -24,7 +24,7 @@
 @media (prefers-color-scheme: light) {
   
   :root {
-    --bg-image: var(--bg-image);
+    --bg-image: url('../images/cover-image-light.png');
     --bg-accent-color: var(--pink-medium, #ff8dcb);
     --main-text-color: var(--gray-dark, #353430);
     --text-accent-color: var(--gray-dark, #353430);
@@ -32,9 +32,9 @@
     --menu-border-color-rgba: var(--gray-dark-translusent, rgba(50 49 45 / 0.4));
     --title-xl-color: var(--pink-light, #ffc2e6);
   }
-
+  
   .page {
-    background-image: var(--bg-image, url(../images/cover-image-light.png));
+    background-image: var(--bg-image);
   }
   
   .header__decorative-element::after,
