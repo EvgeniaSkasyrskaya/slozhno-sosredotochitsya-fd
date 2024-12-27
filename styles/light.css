@@ -1,6 +1,7 @@
 /*значения переменных для светлой темы*/
 :root.theme-light {
   --bg-image: url('../images/cover-image-light.png');
+  --bg-color: var(--pink-light, #ffc2e6);
   --bg-accent-color: var(--pink-medium, #ff8dcb);
   --main-text-color: var(--gray-dark, #353430);
   --text-accent-color: var(--gray-dark, #353430);
@@ -11,7 +12,8 @@
 
 /*стили для принудительного включения светлой темы*/
 .theme-light .page {
-  background-image: var(--bg-image);
+  background-image: var(--bg-image, url('../images/cover-image-light.png'));
+  background-color: var(--bg-color, #ffc2e6);
 }
 
 .theme-light .header__decorative-element::after,
@@ -25,6 +27,7 @@
   
   :root {
     --bg-image: url('../images/cover-image-light.png');
+    --bg-color: var(--pink-light, #ffc2e6);
     --bg-accent-color: var(--pink-medium, #ff8dcb);
     --main-text-color: var(--gray-dark, #353430);
     --text-accent-color: var(--gray-dark, #353430);
@@ -34,9 +37,10 @@
   }
   
   .page {
-    background-image: var(--bg-image);
+    background-image: var(--bg-image, url('../images/cover-image-light.png'));
+    background-color: var(--bg-color, #ffc2e6);
   }
-  
+    
   .header__decorative-element::after,
   .header__decorative-element::before {
     display: none;
