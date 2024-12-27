@@ -1,7 +1,6 @@
 /*значения переменных для темной темы*/
 :root.theme-dark {
   --bg-image: url('../images/cover-image-dark.png');
-  --bg-color: var(--blue-dark, #000028);
   --bg-accent-color: var(--pink-bright, #ff0070);
   --main-text-color: var(--pink, #f1b2ce);
   --text-accent-color: var(--blue-dark,#000028);
@@ -13,7 +12,6 @@
 /*стили для принудительного включения темной темы*/
 .theme-dark .page {
   background-image: var(--bg-image, url('../images/cover-image-dark.png'));
-  background-color: var(--bg-color), #000028;
 }
 
 .theme-dark .header {

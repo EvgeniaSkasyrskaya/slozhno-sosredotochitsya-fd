@@ -19,7 +19,6 @@
  
   /*значения переменных для дефолтной цветовой темы*/
   --bg-image: url('../images/cover-image-dark.png');
-  --bg-color: var(--blue-dark, #000028);
   --bg-accent-color: var(--pink-bright, #ff0070);
   --main-text-color: var(--pink, #f1b2ce);
   --text-accent-color: var(--blue-dark,#000028);
