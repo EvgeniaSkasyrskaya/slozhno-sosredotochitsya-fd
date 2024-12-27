@@ -1,16 +1,49 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+/*Стили для принудительного включения светлой темы при наличии класса*/
+
+/*значения переменных для светлой темы*/
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --bg-image: url(../images/cover-image-light.png);
+  --bg-accent-color: var(--pink-medium, #ff8dcb);
+  --main-text-color: var(--gray-dark, #353430);
+  --text-accent-color: var(--gray-dark, #353430);
+  --title-menu-color: var(--gray-dark, #353430);
+  --menu-border-color-rgba: var(--gray-dark-translusent, rgba(50 49 45 / 0.4));
+  --title-xl-color: var(--pink-light, #ffc2e6);  
 }
 
+/*стили для принудительного включения светлой темы*/
+
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-image: var(--bg-image, url(../images/cover-image-light.png));
+}
+
+.theme-light .header__decorative-element::after,
+.theme-light .header__decorative-element::before {
+  display: none;
+}
+
+/*значения переменных и стили для автоматического применения светлой темы, 
+если она является предпочтительной на устройстве пользователя*/
+@media (prefers-color-scheme: light) {
+  
+  :root {
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-accent-color: var(--pink-medium, #ff8dcb);
+    --main-text-color: var(--gray-dark, #353430);
+    --text-accent-color: var(--gray-dark, #353430);
+    --title-menu-color: var(--gray-dark, #353430);
+    --menu-border-color-rgba: var(--gray-dark-translusent, rgba(50 49 45 / 0.4));
+    --title-xl-color: var(--pink-light, #ffc2e6);
+  }
+
+  .page {
+    background-image: var(--bg-image, url(../images/cover-image-light.png));
+  }
+  
+  .header__decorative-element::after,
+  .header__decorative-element::before {
+    display: none; 
+  }
+ 
 }
