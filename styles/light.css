@@ -24,7 +24,7 @@
 @media (prefers-color-scheme: light) {
   
   :root {
-    --bg-image: url('../images/cover-image-light.png');
+    --bg-image: url(../images/cover-image-light.png);
     --bg-accent-color: var(--pink-medium, #ff8dcb);
     --main-text-color: var(--gray-dark, #353430);
     --text-accent-color: var(--gray-dark, #353430);
@@ -34,7 +34,7 @@
   }
   
   .page {
-    background-image: url('../images/cover-image-light.png');
+    background-image: url(../images/cover-image-light.png);
   }
     
   .header__decorative-element::after,
