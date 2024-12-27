@@ -1,7 +1,4 @@
-/*Стили для принудительного включения светлой темы при наличии класса*/
-
 /*значения переменных для светлой темы*/
-
 :root.theme-light {
   --bg-image: url(../images/cover-image-light.png);
   --bg-accent-color: var(--pink-medium, #ff8dcb);
@@ -13,7 +10,6 @@
 }
 
 /*стили для принудительного включения светлой темы*/
-
 .theme-light .page {
   background-image: var(--bg-image, url(../images/cover-image-light.png));
 }
@@ -45,5 +41,4 @@
   .header__decorative-element::before {
     display: none; 
   }
- 
 }

@@ -1,7 +1,4 @@
-/*Стили для принудительного включения тёмной темы при наличии класса*/
-
 /*значения переменных для темной темы*/
-
 :root.theme-dark {
   --bg-image: url(../images/cover-image-dark.png); 
   --bg-accent-color: var(--pink-bright, #ff0070); 
@@ -13,7 +10,6 @@
 }    
 
 /*стили для принудительного включения темной темы*/
-
 .theme-dark .page {
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
 }
