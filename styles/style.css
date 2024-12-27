@@ -2,20 +2,20 @@
 
 .page {
   font-family: var(--font-family, 'IBM Plex mono', sans-serif);
-  background-image: var(--bg-image, url(../images/cover-image-dark.png));
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.header { 
-  position: relative;  
+.header {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr min-content 1fr;      
+  grid-template-rows: 1fr min-content 1fr;
   margin-block-end: 40px;
-  padding: var(--padding-small, 10px); 
+  padding: var(--padding-small, 10px);
   block-size: min(100vb, 668px);
 }
 
@@ -45,11 +45,11 @@
   inset-block-start: 17px;
 }
 
-.decorated-zone {  
+.decorated-zone {
   position: relative;
 }
 
-.decorated-zone::after, 
+.decorated-zone::after,
 .decorated-zone::before {
   content:' ';
   position: absolute;
@@ -75,9 +75,9 @@
   place-self: center end;
 }
 
-.header__theme-menu-list {    
-  display: flex; 
-  flex-direction: column; 
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -111,11 +111,11 @@
  place-self: center start;
 }
 
-.title { 
+.title {
   color: var(--title-menu-color, #ff0070);
   font-weight: 700;
-  font-size: var(--font-size-main-text, 18px); 
-  line-height: 130%; 
+  font-size: var(--font-size-main-text, 18px);
+  line-height: 130%;
 }
 
 .title_xl {
@@ -268,7 +268,7 @@
 
   .decorated-zone::after {
     inset-inline-start: 20px;
-    inset-block-end: 20px; 
+    inset-block-end: 20px;
   }
 
   .decorated-zone::before {
@@ -291,7 +291,7 @@
   }
 
   .content-section_desktop-two-columns .content-section__list {
-    grid-column: 2 / 3; 
+    grid-column: 2 / 3;
   }
 
   .content-section_desktop-three-columns .content-section__list {
@@ -368,7 +368,7 @@
   }
 
   .content-section_desktop-three-columns .content-section__list {
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
@@ -382,10 +382,9 @@
      пропорции изображений*/
     grid-template-rows: min(25.4vi, 366px) min(30.7vi, 442px) min(42.3vi, 609px);
     gap: 20px;
-  } 
-  
+  }
+
   .footer {
-    grid-template-rows: min(100vb,768px); 
+    grid-template-rows: min(100vb,768px);
   }
 }
-

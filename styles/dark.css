@@ -1,17 +1,17 @@
 /*значения переменных для темной темы*/
 :root.theme-dark {
-  --bg-image: url(../images/cover-image-dark.png); 
-  --bg-accent-color: var(--pink-bright, #ff0070); 
-  --main-text-color: var(--pink, #f1b2ce); 
-  --text-accent-color: var(--blue-dark,#000028); 
-  --title-menu-color: var(--pink-bright, #ff0070); 
+  --bg-image: url('../images/cover-image-dark.png');
+  --bg-accent-color: var(--pink-bright, #ff0070);
+  --main-text-color: var(--pink, #f1b2ce);
+  --text-accent-color: var(--blue-dark,#000028);
+  --title-menu-color: var(--pink-bright, #ff0070);
   --menu-border-color-rgba: var(--pink-dark-translusent, rgba(225 0 112 / 0.4));
   --title-xl-color: var(--fuchsia, #db00ff);
 }    
 
 /*стили для принудительного включения темной темы*/
 .theme-dark .page {
-  background-image: var(--bg-image, url(../images/cover-image-dark.png));
+  background-image: var(--bg-image);
 }
 
 .theme-dark .header {

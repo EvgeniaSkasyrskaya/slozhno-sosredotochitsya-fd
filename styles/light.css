@@ -1,17 +1,17 @@
 /*значения переменных для светлой темы*/
 :root.theme-light {
-  --bg-image: url(../images/cover-image-light.png);
+  --bg-image: url('../images/cover-image-light.png');
   --bg-accent-color: var(--pink-medium, #ff8dcb);
   --main-text-color: var(--gray-dark, #353430);
   --text-accent-color: var(--gray-dark, #353430);
   --title-menu-color: var(--gray-dark, #353430);
   --menu-border-color-rgba: var(--gray-dark-translusent, rgba(50 49 45 / 0.4));
-  --title-xl-color: var(--pink-light, #ffc2e6);  
+  --title-xl-color: var(--pink-light, #ffc2e6);
 }
 
 /*стили для принудительного включения светлой темы*/
 .theme-light .page {
-  background-image: var(--bg-image, url(../images/cover-image-light.png));
+  background-image: var(--bg-image);
 }
 
 .theme-light .header__decorative-element::after,
@@ -24,7 +24,7 @@
 @media (prefers-color-scheme: light) {
   
   :root {
-    --bg-image: url(../images/cover-image-light.png);
+    --bg-image: var(--bg-image);
     --bg-accent-color: var(--pink-medium, #ff8dcb);
     --main-text-color: var(--gray-dark, #353430);
     --text-accent-color: var(--gray-dark, #353430);
@@ -39,6 +39,6 @@
   
   .header__decorative-element::after,
   .header__decorative-element::before {
-    display: none; 
+    display: none;
   }
 }
