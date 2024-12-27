@@ -2,7 +2,8 @@
 
 .page {
   font-family: var(--font-family, 'IBM Plex mono', sans-serif);
-  background-image: url("../images/cover-image-dark.png");
+  background-image: var(--bg-image, url("../images/cover-image-dark.png"));
+  background-color: var(--bg-color, #000028);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

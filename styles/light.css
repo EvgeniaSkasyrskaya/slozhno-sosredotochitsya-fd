@@ -11,7 +11,8 @@
 
 /*стили для принудительного включения светлой темы*/
 .theme-light .page {
-  background-image: url(/images/cover-image-light.png);
+  background-image: var(--bg-image, url('../images/cover-image-light.png'));
+  background-color: transparent;
 }
   
 .theme-light .header__decorative-element::after,
@@ -34,7 +35,8 @@
   }
   
   .page {
-    background-image: url(/images/cover-image-light.png);
+    background-image: var(--bg-image, url('../images/cover-image-light.png'));
+    background-color: transparent;
   }
     
   .header__decorative-element::after,
