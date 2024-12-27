@@ -11,7 +11,7 @@
 
 /*стили для принудительного включения темной темы*/
 .theme-dark .page {
-  background-image: url(../images/cover-image-dark.png);
+  background-image: url("../images/cover-image-dark.png");
 }
 
 .theme-dark .header {
