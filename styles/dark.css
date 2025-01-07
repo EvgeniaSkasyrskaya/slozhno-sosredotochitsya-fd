@@ -16,34 +16,9 @@
   background-color: var(--bg-color, #000028);
 }
 
-.theme-dark .header {
-  position: relative;
-}  
-
+.theme-dark .header__decorative-element::after,
 .theme-dark .header__decorative-element::before {
   display: inline;
-  content: 'REC';
-  color: var(--title-menu-color, #ff0070);
-  inset-block-start: 10px;
-  inset-inline-end: 38px;
-  line-height: 139%;
-  font-size: 18px;
-  position: absolute;
-  z-index: 1;
-}
-
-.theme-dark .header__decorative-element::after {
-  display: inline;
-  content:' ';
-  inline-size: 11px;
-  block-size: 11px;
-  border-radius: 50%;
-  background-color: var(--title-menu-color, #ff0070);
-  box-shadow: 0 0 4px 2px var(--title-menu-color, #ff0070);
-  inset-inline-end: 18px;
-  inset-block-start: 17px;
-  position: absolute;
-  z-index: 1;
 }
 
 @media (width >= 768px) {
