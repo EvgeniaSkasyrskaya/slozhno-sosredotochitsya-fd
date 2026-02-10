@@ -14,7 +14,7 @@
   background-image: var(--bg-image, url('../images/cover-image-light.png'));
   background-color: transparent;
 }
-  
+
 .theme-light .header__decorative-element::after,
 .theme-light .header__decorative-element::before {
   display: none;
@@ -23,22 +23,24 @@
 /*значения переменных и стили для автоматического применения светлой темы, 
 если она является предпочтительной на устройстве пользователя*/
 @media (prefers-color-scheme: light) {
-  
   :root {
     --bg-image: url(../images/cover-image-light.png);
     --bg-accent-color: var(--pink-medium, #ff8dcb);
     --main-text-color: var(--gray-dark, #353430);
     --text-accent-color: var(--gray-dark, #353430);
     --title-menu-color: var(--gray-dark, #353430);
-    --menu-border-color-rgba: var(--gray-dark-translusent, rgba(50 49 45 / 0.4));
+    --menu-border-color-rgba: var(
+      --gray-dark-translusent,
+      rgba(50 49 45 / 0.4)
+    );
     --title-xl-color: var(--pink-light, #ffc2e6);
   }
-  
+
   .page {
     background-image: var(--bg-image, url('../images/cover-image-light.png'));
     background-color: transparent;
   }
-    
+
   .header__decorative-element::after,
   .header__decorative-element::before {
     display: none;

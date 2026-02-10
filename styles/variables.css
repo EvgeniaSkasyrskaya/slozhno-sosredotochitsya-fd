@@ -1,14 +1,13 @@
 :root {
-  
   /*переменные, независимые от цветовой темы*/
   --font-family: 'IBM Plex mono';
   --font-size-main-text: 18px;
   --padding-small: 10px;
   --padding-large: 20px;
-  
+
   /*переменные для палитры цветов*/
   --pink-bright: #ff0070;
-  --pink-medium:#ff8dcb;
+  --pink-medium: #ff8dcb;
   --pink: #f1b2ce;
   --pink-light: #ffc2e6;
   --fuchsia: #db00ff;
@@ -16,23 +15,14 @@
   --gray-dark: #353430;
   --gray-dark-translusent: rgba(50 49 45 / 0.4);
   --pink-dark-translusent: rgba(225 0 112 / 0.4);
- 
+
   /*значения переменных для дефолтной цветовой темы*/
   --bg-image: url('../images/cover-image-dark.png');
   --bg-color: var(--blue-dark, #000028);
   --bg-accent-color: var(--pink-bright, #ff0070);
   --main-text-color: var(--pink, #f1b2ce);
-  --text-accent-color: var(--blue-dark,#000028);
+  --text-accent-color: var(--blue-dark, #000028);
   --title-menu-color: var(--pink-bright, #ff0070);
   --menu-border-color-rgba: var(--pink-dark-translusent, rgba(225 0 112 / 0.4));
   --title-xl-color: var(--fuchsia, #db00ff);
 }
-
-
-  
-  
-  
-  
-  
-  
-  
